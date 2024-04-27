@@ -6,7 +6,12 @@ Education
 
 Master of Science in Business Analytics                                                    	                                July 2024
 Hult International Business School | [San Francisco, California]
-•	Relevant Courses: Teamwork & Collaboration, Data Management & SQL, Business Statistics, Computational structural and unstructured data analysis with python, and Data Visualization with R Studio.
+
+
+
+•	Relevant Courses: Teamwork & Collaboration, 
+Data Management & SQL, Business Statistics, 
+Computational (structural and unstructured) data analysis with python, and Data Visualization with R Studio.
 Master of Business Administration 	 May 2020 - April 2020
 Taylor’s University | Kuala Lumpur, Malaysia 
 •	Concentration in Strategic Management; Minored in Strategic Marketing
@@ -45,5 +50,5 @@ Publication
 
 Shared Values of Jobsite, Taylor’s Business Review Journal | Subang Jaya, Malaysia                    December 2020
 •	Researched an academic project and published an article as a main Author that identifies the user intention of usability with detailed empirical analysis.
-![image](https://github.com/munjarin/profile/assets/148337133/ed5def23-2ebc-4e50-a6d3-640ec9fbc409)
+
 
