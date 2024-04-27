@@ -6,7 +6,51 @@ I am a seasoned business analyst with a strong background in strategic managemen
 
 LinkedIn: munjarin
 
-Project Overview: Business Challenge II - Decision Tree Optimization
+
+
+Passion Project : Bridge and Torch Text Adventure
+Background
+"Bridge and Torch Text Adventure" is a text-based simulation game that challenges players to solve puzzles and make strategic decisions under time constraints. The project was inspired by classic adventure games and puzzles, and it leverages Python's interactive capabilities to engage users in a narrative-driven experience.
+
+Objective
+The main goal of this project was to create an engaging text adventure game that combines elements of storytelling, puzzle-solving, and strategic planning. The game is designed to be both entertaining and intellectually stimulating, providing players with a series of challenges that test their problem-solving skills and decision-making abilities.
+
+Game Design and Development
+Conceptualization
+The game's concept revolves around a scenario where players must safely guide a group of characters across a bridge at night. The catch is that the bridge can only support two people at a time and they have a single torch that must be carried back and forth. The time taken to cross the bridge varies for each character, adding complexity to the task of crossing everyone within a limited time.
+
+Implementation
+The game was developed in Python, utilizing basic console input and output to interact with the player. Python's simplicity and flexibility made it an ideal choice for rapidly prototyping and testing game mechanics.
+
+Code Snippet for Game Mechanics
+
+def calculate_time(group):
+    """Calculate the crossing time based on the slowest member of the group."""
+    return max(group)
+
+def play_round():
+    """Play a round of the game where players choose who crosses the bridge."""
+    print("Choose two characters to cross the bridge.")
+    choice = input("Enter your choice: ").split()
+    time_taken = calculate_time(choice)
+    update_game_state(time_taken)
+
+def update_game_state(time):
+    """Update the game state based on the time taken for the round."""
+    global remaining_time
+    remaining_time -= time
+    check_game_end()
+
+def check_game_end():
+    """Check if the game has ended based on remaining time and characters left."""
+    if remaining_time <= 0:
+        print("You have run out of time!")
+    elif not characters_left:
+        print("Congratulations! All characters have crossed the bridge.")
+
+
+
+Project Overview: Regression Analysis - Decision Tree Optimization
 Background
 This project addresses a complex business problem involving prediction of key business outcomes. Using a decision tree model, the project explores the efficacy of various hyperparameters and their impact on the model's predictive accuracy and generalization to new data.
 
