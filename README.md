@@ -1,5 +1,6 @@
 Munjarin Rahman's Data Science Projects
-Welcome to my professional portfolio on GitHub. This repository contains various projects showcasing my skills and expertise in business analytics and data science, particularly in the realm of predictive modeling and decision analysis. Below is a detailed description of one of my key projects, "Business Challenge II".
+
+
 
 About Me
 I am a seasoned business analyst with a strong background in strategic management and data analytics. My educational credentials include a Master of Science in Business Analytics from Hult International Business School. I have applied my skills in various real-world scenarios, including product sourcing and manufacturing process management, to drive profitability and efficiency improvements.
