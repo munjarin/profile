@@ -1,54 +1,51 @@
-# Munjarin's Portfolio 
-The portfolio is in Progress, Please Visit after 30 April
+Munjarin Rahman's Data Science Projects
+Welcome to my professional portfolio on GitHub. This repository contains various projects showcasing my skills and expertise in business analytics and data science, particularly in the realm of predictive modeling and decision analysis. Below is a detailed description of one of my key projects, "Business Challenge II".
 
+About Me
+I am a seasoned business analyst with a strong background in strategic management and data analytics. My educational credentials include a Master of Science in Business Analytics from Hult International Business School. I have applied my skills in various real-world scenarios, including product sourcing and manufacturing process management, to drive profitability and efficiency improvements.
 
-Education
+LinkedIn: munjarin
 
-Master of Science in Business Analytics                                                    	                                July 2024
-Hult International Business School | [San Francisco, California]
+Project Overview: Business Challenge II - Decision Tree Optimization
+Background
+This project addresses a complex business problem involving prediction of key business outcomes. Using a decision tree model, the project explores the efficacy of various hyperparameters and their impact on the model's predictive accuracy and generalization to new data.
 
+Objective
+The primary objective was to optimize a decision tree regressor to ensure the highest level of accuracy while minimizing the risk of overfitting. This involved an extensive exploration of hyperparameters tuning using advanced techniques like RandomizedSearchCV.
 
+Methodology
+Data Preparation
+The data set comprised various business metrics collected from internal company records. Prior to modeling, the data underwent preprocessing, including normalization, handling missing values, and feature selection to ensure optimal model performance.
 
-•	Relevant Courses: Teamwork & Collaboration, 
-Data Management & SQL, Business Statistics, 
-Computational (structural and unstructured) data analysis with python, and Data Visualization with R Studio.
-Master of Business Administration 	 May 2020 - April 2020
-Taylor’s University | Kuala Lumpur, Malaysia 
-•	Concentration in Strategic Management; Minored in Strategic Marketing
+Model Building
+A DecisionTreeRegressor from Scikit-Learn was employed for this analysis. The choice of a decision tree was motivated by its interpretability and the non-linear nature of the data.
 
-Skills
+Code Snippet for Model Configuration
+python
+Copy code
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import RandomizedSearchCV
 
-Leadership Skills: Denim development and production, price negotiation, product sourcing & development, manufacturing process management, vendor development, business data analysis, and team coaching.
-Technical Skill: SQL Execute Queries, Retrieve Data, Visualization of Data, Executing Tables, Joining Data, Analyze Data with Python and R, Scikit learn.
-Software: My SQL, Jupiter Notebook Python, R Studio, Tableau, SPSS, Open AI Prompt Engineering, Notion
-Certifications: Intermediate SQL Queries (Data Camp), Introduction to Artificial Intelligence (IBM), Understanding Data Science (Data Camp), SQL for joining Data (Data Camp), Work Smarter with Microsoft Excel (Microsoft), Intermediate Python (Data Camp), Supervised Leaning With sci-kit learn (Data Camp), Data Science in Python (Data Camp)
+# Define the parameter grid
+param_grid = {
+    'criterion': ['squared_error', 'absolute_error'],
+    'splitter': ['best', 'random'],
+    'max_depth': [None, 10, 20, 30],
+    'min_samples_leaf': [1, 2, 4, 6]
+}
 
-Experience
+# Instantiate and configure RandomizedSearchCV
+tuned_tree = DecisionTreeRegressor(random_state=219)
+tuned_tree_cv = RandomizedSearchCV(estimator=tuned_tree, param_distributions=param_grid, cv=5, n_iter=100, random_state=702)
+tuned_tree_cv.fit(x_data, y_data)
+Results
+The best parameters obtained from RandomizedSearchCV were {criterion: 'squared_error', max_depth: 20, min_samples_leaf: 1, splitter: 'random'}. Applying these parameters, the final model demonstrated significant improvements in predictive accuracy compared to the baseline model.
 
-Tex Merchant Group | Singapore | Bangladesh                                                                          April 2014 – August 2023
+Key Findings
+The optimal depth of the tree indicated a complex model, which was regularized by optimizing the min_samples_leaf parameter to prevent overfitting.
+The use of 'squared_error' as a criterion provided the best balance between bias and variance.
+Conclusion
+The tuned decision tree model showed a robust ability to predict outcomes with high accuracy, underscoring the importance of thorough hyperparameter tuning in building predictive models.
 
-Director & Shareholder
-I was responsible for sourcing international customers and suppliers of readymade garments, making plans for garment production, and executing the plan compiling teams of different departments.
-
-•	I have established the garments sourcing business from scratch up to the point where the organization reached a yearly revenue of over 17 million dollars and I profoundly managed over 40 people from 6 different departments in 3 different nations including Canada, directly involved in production planning, and building the strategic framework for the company by analyzing problems using both qualitative and quantitative data from 2014 to 2023.  
-
-•	Led the operation of 17 RMG factories and 50 mills, produced 3 million products for clients yearly, and negotiated with pioneers of the RMG industry globally, I reduced the customer churn rate to none for the organization in 2021.
-
-•	Frequently traveled to showcase the product and source the materials. Established a research and development section for denim to provide a seamless experience of product development to customers.
-
-•	Brought the company to the Global level and established a virtual office in Singapore for managing finance for DDP shipments, which improved by 2% incentive over revenue. 
-
-•	Negotiated mega projects over millions of dollars as a leader and increased the profitability of the company on a routine basis. Implemented academic knowledge to real-world problems and managed organization confidently, while maintaining a growth of 15% every year.
-
-Additional Experience
-
-Fair Trade Group, Product Developer | Gazipur, Bangladesh                                                August 2012 – March 2014
-Infiniti Sphere IT, Director & Shareholder | Subang Jaya, Malaysia                                                   Since August 2022
-
-Publication
-
-
-Shared Values of Jobsite, Taylor’s Business Review Journal | Subang Jaya, Malaysia                    December 2020
-•	Researched an academic project and published an article as a main Author that identifies the user intention of usability with detailed empirical analysis.
-
-
+Future Work
+Further research will focus on ensemble methods to enhance model stability and performance, and on integrating more complex algorithms like Gradient Boosting and Random Forests.
