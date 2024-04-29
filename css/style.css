@@ -1,0 +1,226 @@
+@import 'utilities.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternery:#898989;
+    --light:#F2F2F2;
+    --secondary: #070606;
+
+}
+body{
+    
+   font-family: 'Poppins', sans-serif; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 70% 100%, 0 100% );
+
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: auto auto;
+
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+header nav .left a:hover{
+    color:var(--primary)
+}
+header nav{
+    padding: 0rem 0;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.Munjarin{
+    padding: 1rem 0;
+}
+.Munjarin .left img{
+    width: 900px;
+}
+.Munjarin .right{
+    color: var(--pure);
+}
+.Munjarin .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0rem;
+}
+
+.Munjarin .right h1{
+    font-size: 2.7rem;
+    font-weight: 100;
+    margin-bottom: 0rem;
+}
+
+.Munjarin .right h1 span{
+    color: var(--primary);
+}
+
+.Munjarin .right p{
+    line-height: 1.9;
+    margin-bottom: 5rem;
+}
+
+.Munjarin .right {
+    margin-top: -6rem;
+}
+
+section{
+    padding:9rem 0;
+}
+
+section.about .about-me-img{
+    height: 990px;
+    margin-bottom: 1rem;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    font-family: sans-serif;
+    color: var(--ternery);
+    line-height: 1.9;
+    
+}
+
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading + p{
+    color: var(--ternery);
+    font-family: sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+section.projects {
+    background:var(--light);
+}
+
+section.projects .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    max-width: 1010px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Optional: Set a background color */
+}
+
+/* Heading style */
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph style */
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Show Code button */
+.show-code-button {
+    background-color: var(--primary); /* Use your primary color variable */
+    color: #ffffff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.show-code-button:hover {
+    background-color: var(--secondary); /* Optional: Hover effect color */
+}
+
+/* Photos container */
+.photos {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Individual photo style */
+.photos img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.photos {
+    display: none;
+}
+
+
+
+footer {
+    height: 6rem;
+    background: var(--dark);
+    text-align: center
+    
+}
+
+footer .footer-logo{
+margin-bottom: 5px;
+
+}
+footer .Copyright{
+    color: var(--ternery);
+    ;
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+.section .resume {
+   text-align: center;
+    
+    
+}
+
+
+section.resume .btn-wrapper{
+    text-align: center;
+    margin-top: 0rem;
+ 
+}
